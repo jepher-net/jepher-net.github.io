@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>花都手工-匠心手作与花艺饰品精选指南</title>
+    <meta name="description" content="花都手工专注于手工花艺、DIY手作教程、创意花束与手工艺品分享，带你发现手作之美，体验匠心生活。">
+    <meta name="keywords" content="花都手工,手工花艺,DIY教程,手作花束,创意手工,花艺饰品,手工艺品,花都手作">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+            background-color: #faf7f2;
+            color: #3e2f23;
+            line-height: 1.7;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        header {
+            background: linear-gradient(135deg, #f9e0d9, #f5c9c0);
+            padding: 18px 0;
+            border-bottom: 3px solid #d9a79a;
+        }
+        .header-inner {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo-area h1 {
+            font-size: 2rem;
+            color: #5f2e1f;
+            letter-spacing: 2px;
+            font-weight: 700;
+        }
+        .logo-area p {
+            font-size: 0.9rem;
+            color: #7a4a3a;
+            letter-spacing: 1px;
+        }
+        nav.main-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+        }
+        nav.main-nav a {
+            text-decoration: none;
+            color: #4a2e22;
+            font-weight: 500;
+            padding: 6px 10px;
+            border-radius: 20px;
+            transition: background 0.3s;
+            font-size: 0.95rem;
+        }
+        nav.main-nav a:hover {
+            background: #fff0e9;
+            color: #8a3f2a;
+        }
+        .hero {
+            background: #fff7f0;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 1px solid #e5d5cc;
+        }
+        .hero h2 {
+            font-size: 2.2rem;
+            color: #7c3f2b;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #6a4c3a;
+            max-width: 720px;
+            margin: 0 auto 25px auto;
+        }
+        .hero .btn {
+            display: inline-block;
+            background: #b96a4e;
+            color: #fff;
+            padding: 12px 30px;
+            border-radius: 40px;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            transition: background 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+        .hero .btn:hover {
+            background: #9d4f36;
+        }
+        .features {
+            padding: 45px 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .feature-card {
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+            border-top: 5px solid #e4b6a5;
+            transition: transform 0.2s;
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+        .feature-card .icon {
+            font-size: 2.8rem;
+            margin-bottom: 15px;
+        }
+        .feature-card h3 {
+            font-size: 1.3rem;
+            color: #6b3a26;
+            margin-bottom: 10px;
+        }
+        .feature-card p {
+            color: #7a5a48;
+            font-size: 0.92rem;
+        }
+        .section-title {
+            text-align: center;
+            font-size: 1.9rem;
+            color: #7a3f2a;
+            margin: 50px 0 10px;
+            position: relative;
+            font-weight: 600;
+        }
+        .section-sub {
+            text-align: center;
+            color: #9a7a66;
+            margin-bottom: 30px;
+            font-size: 0.95rem;
+        }
+        .categories {
+            background: #f5ede6;
+            padding: 30px 20px 45px;
+        }
+        .cat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .cat-item {
+            background: #fffdfb;
+            border-radius: 16px;
+            padding: 20px 10px;
+            text-align: center;
+            border: 1px solid #e8d9cf;
+            transition: all 0.2s;
+        }
+        .cat-item:hover {
+            border-color: #c98a70;
+            background: #fff7f2;
+        }
+        .cat-item span {
+            display: block;
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+        .cat-item h4 {
+            font-size: 1rem;
+            color: #5e3827;
+        }
+        .cat-item p {
+            font-size: 0.8rem;
+            color: #9a7b68;
+            margin-top: 5px;
+        }
+        .tutorials {
+            padding: 20px 20px 50px;
+        }
+        .tutorial-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .tutorial-card {
+            background: #ffffff;
+            border-radius: 18px;
+            overflow: hidden;
+            box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+            transition: 0.2s;
+            border: 1px solid #f0e0d6;
+        }
+        .tutorial-card:hover {
+            box-shadow: 0 12px 26px rgba(0,0,0,0.08);
+        }
+        .tutorial-img {
+            height: 180px;
+            background: linear-gradient(145deg, #f8d5c8, #f2c1af);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: #9e5d43;
+        }
+        .tutorial-body {
+            padding: 20px;
+        }
+        .tutorial-body h3 {
+            font-size: 1.2rem;
+            color: #5c3523;
+            margin-bottom: 8px;
+        }
+        .tutorial-body p {
+            color: #866e5d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        .tag {
+            display: inline-block;
+            background: #f8e3da;
+            color: #8a4630;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            margin-right: 5px;
+        }
+        .steps {
+            background: #f3ece6;
+            padding: 40px 20px;
+        }
+        .steps-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .step-item {
+            text-align: center;
+            padding: 20px 10px;
+        }
+        .step-num {
+            width: 45px;
+            height: 45px;
+            background: #b96a4e;
+            color: white;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.3rem;
+            margin-bottom: 15px;
+        }
+        .step-item h4 {
+            color: #5e3827;
+            margin-bottom: 6px;
+            font-size: 1.1rem;
+        }
+        .step-item p {
+            color: #7d6250;
+            font-size: 0.9rem;
+        }
+        .tips {
+            padding: 40px 20px 30px;
+        }
+        .tips-list {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .tips-list li {
+            background: #fff;
+            padding: 18px 25px;
+            margin-bottom: 15px;
+            border-radius: 40px;
+            list-style: none;
+            border-left: 6px solid #d9a79a;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.02);
+        }
+        .tips-list strong {
+            color: #7c3f2b;
+            margin-right: 10px;
+        }
+        .faq {
+            background: #f5ede6;
+            padding: 40px 20px;
+        }
+        .faq-item {
+            max-width: 800px;
+            margin: 0 auto 20px;
+            background: white;
+            border-radius: 16px;
+            padding: 20px 30px;
+            border: 1px solid #e7d6cb;
+        }
+        .faq-item h3 {
+            font-size: 1.1rem;
+            color: #6b3a26;
+            margin-bottom: 10px;
+        }
+        .faq-item p {
+            color: #795d4b;
+            font-size: 0.95rem;
+        }
+        footer {
+            background: #3e2c23;
+            color: #d9c8bb;
+            padding: 30px 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+        footer p {
+            font-size: 0.9rem;
+            margin: 5px 0;
+        }
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav.main-nav {
+                justify-content: center;
+                margin-top: 12px;
+            }
+            .hero h2 {
+                font-size: 1.7rem;
+            }
+            .features {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 480px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+            .cat-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+            .tutorial-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero {
+                padding: 30px 15px;
+            }
+        }
+    </style>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="logo-area">
+                <h1>花都手工</h1>
+                <p>匠心花艺 · 手作温度</p>
+            </div>
+            <nav class="main-nav">
+                <a href="#home">首页</a>
+                <a href="#category">分类</a>
+                <a href="#tutorial">教程</a>
+                <a href="#steps">制作步骤</a>
+                <a href="#tips">心得技巧</a>
+                <a href="#faq">常见问题</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <h2>发现花都手工之美</h2>
+            <p>无论是清新花束、干花装饰，还是创意纸艺花，我们分享专业的手工花艺教程与设计灵感，让每一朵花都拥有手作的温度。</p>
+            <a href="#tutorial" class="btn">浏览热门教程</a>
+        </section>
+
+        <section class="features">
+            <div class="feature-card">
+                <div class="icon">🌷</div>
+                <h3>花艺设计</h3>
+                <p>从花束包装到花盒搭配，探索花都风格的花艺创作思路。</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">✂️</div>
+                <h3>DIY手作</h3>
+                <p>折纸花、扭扭棒花、黏土花，手把手教你做永不凋谢的花。</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🎀</div>
+                <h3>包装美学</h3>
+                <p>丝带系法、包装纸选择，让手作花束更有高级感。</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">📖</div>
+                <h3>材料指南</h3>
+                <p>认识花材、工具与辅料，新手也能轻松上手。</p>
+            </div>
+        </section>
+
+        <section class="categories" id="category">
+            <h2 class="section-title">手工花艺分类</h2>
+            <p class="section-sub">找到你喜欢的手作方向</p>
+            <div class="cat-grid">
+                <div class="cat-item">
+                    <span>💐</span>
+                    <h4>鲜花花束</h4>
+                    <p>花束设计与包装技巧</p>
+                </div>
+                <div class="cat-item">
+                    <span>🌿</span>
+                    <h4>干花相框</h4>
+                    <p>定格自然的治愈手作</p>
+                </div>
+                <div class="cat-item">
+                    <span>🌸</span>
+                    <h4>黏土花艺</h4>
+                    <p>细腻唯美的软陶花</p>
+                </div>
+                <div class="cat-item">
+                    <span>🎐</span>
+                    <h4>纸艺花</h4>
+                    <p>轻薄纸张折出立体花朵</p>
+                </div>
+                <div class="cat-item">
+                    <span>🧶</span>
+                    <h4>毛线编织花</h4>
+                    <p>钩针与棒针的温柔花束</p>
+                </div>
+                <div class="cat-item">
+                    <span>🕯️</span>
+                    <h4>香薰花蜡</h4>
+                    <p>花与香气的浪漫结合</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tutorials" id="tutorial">
+            <h2 class="section-title">热门手工教程</h2>
+            <p class="section-sub">花都手工精选，一步步教你制作</p>
+            <div class="tutorial-grid">
+                <article class="tutorial-card">
+                    <div class="tutorial-img">🌻</div>
+                    <div class="tutorial-body">
+                        <h3>向日葵扭扭棒花束</h3>
+                        <p>用简单的扭扭棒制作出阳光般的向日葵，适合家居装饰或送礼。</p>
+                        <span class="tag">扭扭棒</span>
+                        <span class="tag">入门</span>
+                    </div>
+                </article>
+                <article class="tutorial-card">
+                    <div class="tutorial-img">💐</div>
+                    <div class="tutorial-body">
+                        <h3>韩式小清新花束包装</h3>
+                        <p>从选花到包装，掌握韩式自然风花束的包装要点，花店实用技能。</p>
+                        <span class="tag">鲜花</span>
+                        <span class="tag">包装</span>
+                    </div>
+                </article>
+                <article class="tutorial-card">
+                    <div class="tutorial-img">🌹</div>
+                    <div class="tutorial-body">
+                        <h3>皱纹纸仿真玫瑰</h3>
+                        <p>皱纹纸做出来的玫瑰几可乱真，一起来做一束永恒玫瑰。</p>
+                        <span class="tag">纸艺</span>
+                        <span class="tag">进阶</span>
+                    </div>
+                </article>
+                <article class="tutorial-card">
+                    <div class="tutorial-img">🌸</div>
+                    <div class="tutorial-body">
+                        <h3>干花透明相框DIY</h3>
+                        <p>将压干的花材装裱进相框，把美好回忆挂在墙上。</p>
+                        <span class="tag">干花</span>
+                        <span class="tag">装饰</span>
+                    </div>
+                </article>
+                <article class="tutorial-card">
+                    <div class="tutorial-img">🧸</div>
+                    <div class="tutorial-body">
+                        <h3>小熊花束制作</h3>
+                        <p>用花泥和玩偶制作可爱的抱抱熊花束，是生日惊喜的热门选择。</p>
+                        <span class="tag">创意</span>
+                        <span class="tag">礼物</span>
+                    </div>
+                </article>
+                <article class="tutorial-card">
+                    <div class="tutorial-img">🕊️</div>
+                    <div class="tutorial-body">
+                        <h3>婚礼手捧花设计</h3>
+                        <p>了解圆形、瀑布型、自然风手捧花的设计思路与制作要点。</p>
+                        <span class="tag">花艺</span>
+                        <span class="tag">婚礼</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="steps" id="steps">
+            <h2 class="section-title">手作基础四步</h2>
+            <p class="section-sub">无论哪种手工花，都离不开这些步骤</p>
+            <div class="steps-grid">
+                <div class="step-item">
+                    <div class="step-num">1</div>
+                    <h4>准备材料</h4>
+                    <p>花材、纸张、胶带、铁丝、剪刀等工具提前备齐。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">2</div>
+                    <h4>处理花材</h4>
+                    <p>鲜花需修剪去叶，纸材需裁剪形状，黏土需调色揉匀。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">3</div>
+                    <h4>组合定型</h4>
+                    <p>按造型将花瓣、叶片与枝条组合，用胶枪或胶带固定。</p>
+                </div>
+                <div class="step-item">
+                    <div class="step-num">4</div>
+                    <h4>整体装饰</h4>
+                    <p>添加丝带、珍珠、包装纸等细节，让作品更精致。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="tips" id="tips">
+            <h2 class="section-title">花都手工经验分享</h2>
+            <p class="section-sub">一些实用的小贴士，让你的手作更出色</p>
+            <ul class="tips-list">
+                <li><strong>花材选择：</strong>初学者可先从仿真花、扭扭棒或纸花入手，成本低且反复可练。</li>
+                <li><strong>色彩搭配：</strong>同色系、邻近色搭配最安全，适当留白更有高级感。</li>
+                <li><strong>工具保养：</strong>使用后及时清理胶枪、剪刀上的残胶，可以延长工具寿命。</li>
+                <li><strong>灵感收集：</strong>多浏览花艺作品，保存喜欢的配色与造型，建立自己的灵感库。</li>
+                <li><strong>耐心细节：</strong>手工花的关键在于花瓣的层次与弧度，多花时间整理会更好看。</li>
+            </ul>
+        </section>
+
+        <section class="faq" id="faq">
+            <h2 class="section-title">关于花都手工的常见问题</h2>
+            <div class="faq-item">
+                <h3>我是零基础，可以学会手工花艺吗？</h3>
+                <p>当然可以。建议从简单的扭扭棒花、纸艺花学起，跟着教程一步步操作，多练习几次就能掌握基本手法。花都手工的教程都配有详细步骤说明，非常适合新手。</p>
+            </div>
+            <div class="faq-item">
+                <h3>手工做的花能保存多久？</h3>
+                <p>干花、纸花、黏土花和扭扭棒花如果避免潮湿和暴晒，可以保存数月甚至数年。鲜花花束一般可维持5-7天，但做成干花后就能长久保存。</p>
+            </div>
+            <div class="faq-item">
+                <h3>在哪里可以买到手工花材料？</h3>
+                <p>常见的手工材料如扭扭棒、皱纹纸、花艺胶带在大型电商平台或当地文具店、花艺用品店都能买到。建议新手先购买基础材料包，确认兴趣后再扩充工具。</p>
+            </div>
+            <div class="faq-item">
+                <h3>手工花艺可以用来创业吗？</h3>
+                <p>手工花艺作品在节日、婚礼、派对等场景需求较大。你可以通过线上接单、参加市集或开设体验课程等方式尝试。不过创业前请做好市场调研，并持续打磨自己的作品风格。</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>花都手工 · 用心创造每一朵花</p>
+            <p>分享手作教程 | 花艺灵感 | 手工生活</p>
+            <p style="font-size:0.8rem; opacity:0.7;">© 花都手工 内容仅供参考，请适度娱乐并尊重原创</p>
+        </div>
+    </footer>
+</body>
+</html>

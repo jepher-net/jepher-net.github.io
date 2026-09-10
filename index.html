@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>不知火舞外星人-神秘跨界档案与深度解析专题</title>
+    <meta name="description" content="不知火舞外星人这一神秘主题深度解析，涵盖角色背景、跨界设定、粉丝创作、热门话题与常见疑问，带你探索格斗女王与外星文明交织的奇妙世界观。">
+    <meta name="keywords" content="不知火舞外星人,不知火舞,外星人设定,跨界角色,格斗游戏,SNK,神秘档案,同人创作">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", "Helvetica Neue", Arial, sans-serif;
+            background: #0b0e1a;
+            color: #e8eaf6;
+            line-height: 1.7;
+            overflow-x: hidden;
+        }
+        a {
+            color: #f8c26a;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+        a:hover {
+            color: #ffe0a3;
+        }
+        .wrapper {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* 头部 */
+        .site-header {
+            background: linear-gradient(145deg, #101528 0%, #1a1f35 100%);
+            border-bottom: 1px solid #2a3150;
+            padding: 16px 0;
+            position: sticky;
+            top: 0;
+            z-index: 50;
+            backdrop-filter: blur(6px);
+        }
+        .header-inner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .logo-area {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-icon {
+            width: 42px;
+            height: 42px;
+            background: radial-gradient(circle, #f8c26a 0%, #d94f3d 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 26px;
+            box-shadow: 0 0 18px rgba(248, 194, 106, 0.5);
+        }
+        .logo-text {
+            font-size: 1.4rem;
+            font-weight: 800;
+            letter-spacing: 1px;
+            color: #f8f9ff;
+        }
+        .logo-text span {
+            color: #f8c26a;
+        }
+        .main-nav ul {
+            display: flex;
+            list-style: none;
+            gap: 28px;
+            flex-wrap: wrap;
+        }
+        .main-nav a {
+            font-weight: 500;
+            padding: 6px 0;
+            border-bottom: 2px solid transparent;
+            font-size: 0.95rem;
+        }
+        .main-nav a:hover {
+            border-bottom-color: #f8c26a;
+        }
+        .search-box {
+            display: flex;
+            align-items: center;
+            background: #0e1222;
+            border: 1px solid #2d3450;
+            border-radius: 40px;
+            padding: 6px 4px 6px 16px;
+        }
+        .search-box input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: #fff;
+            width: 180px;
+            font-size: 0.9rem;
+        }
+        .search-box button {
+            background: #f8c26a;
+            border: none;
+            border-radius: 30px;
+            padding: 6px 18px;
+            color: #1a1f35;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        /* 首屏 Hero */
+        .hero {
+            background: radial-gradient(ellipse at 20% 40%, #1c2440 0%, #0b0e1a 70%);
+            padding: 70px 0 60px;
+            border-bottom: 1px solid #1f2740;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: -80px;
+            right: -60px;
+            width: 320px;
+            height: 320px;
+            background: radial-gradient(circle, rgba(248,194,106,0.12) 0%, transparent 70%);
+            border-radius: 50%;
+            pointer-events: none;
+        }
+        .hero-grid {
+            display: grid;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 50px;
+            align-items: center;
+        }
+        .hero-badge {
+            display: inline-block;
+            background: rgba(248, 194, 106, 0.12);
+            border: 1px solid rgba(248,194,106,0.3);
+            color: #f8c26a;
+            padding: 6px 18px;
+            border-radius: 40px;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            margin-bottom: 22px;
+            font-weight: 600;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 18px;
+            background: linear-gradient(120deg, #ffffff 0%, #f8c26a 80%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            color: transparent;
+        }
+        .hero p {
+            font-size: 1.1rem;
+            color: #b0b8d4;
+            max-width: 620px;
+            margin-bottom: 28px;
+        }
+        .hero-actions {
+            display: flex;
+            gap: 16px;
+            flex-wrap: wrap;
+        }
+        .btn-primary {
+            background: linear-gradient(135deg, #f8c26a, #e09a3e);
+            color: #151b2c;
+            font-weight: 700;
+            padding: 12px 28px;
+            border-radius: 40px;
+            box-shadow: 0 6px 20px rgba(248,194,106,0.25);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            color: #151b2c;
+            box-shadow: 0 10px 28px rgba(248,194,106,0.4);
+        }
+        .btn-ghost {
+            border: 1px solid #3a4162;
+            padding: 12px 28px;
+            border-radius: 40px;
+            color: #c6cde5;
+            font-weight: 600;
+        }
+        .btn-ghost:hover {
+            border-color: #f8c26a;
+            color: #f8c26a;
+        }
+        .hero-visual {
+            background: linear-gradient(145deg, #141b30, #1e2745);
+            border-radius: 20px;
+            padding: 28px;
+            border: 1px solid #2a3250;
+            text-align: center;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+        }
+        .hero-visual .visual-icon {
+            font-size: 6rem;
+            filter: drop-shadow(0 0 16px rgba(248,194,106,0.4));
+            line-height: 1.2;
+        }
+        .hero-visual .visual-title {
+            font-size: 1.3rem;
+            font-weight: 800;
+            margin-top: 8px;
+        }
+        .hero-visual .visual-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .tag {
+            background: rgba(248,194,106,0.1);
+            border: 1px solid rgba(248,194,106,0.2);
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            color: #f8c26a;
+        }
+
+        /* 通用区块标题 */
+        .section-title {
+            font-size: 1.8rem;
+            font-weight: 800;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .section-title::before {
+            content: '◆';
+            color: #f8c26a;
+            font-size: 1.4rem;
+        }
+        .section-sub {
+            color: #8f98b8;
+            margin-bottom: 36px;
+            font-size: 0.95rem;
+        }
+
+        /* 卡片网格 */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 26px;
+        }
+        .card {
+            background: #12172b;
+            border: 1px solid #232b47;
+            border-radius: 16px;
+            padding: 28px 24px;
+            transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+        }
+        .card:hover {
+            transform: translateY(-6px);
+            border-color: #4a5578;
+            box-shadow: 0 15px 32px rgba(0,0,0,0.4);
+        }
+        .card-icon {
+            font-size: 2.6rem;
+            margin-bottom: 16px;
+            display: block;
+        }
+        .card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #f0f2ff;
+        }
+        .card p {
+            color: #a6aecb;
+            font-size: 0.9rem;
+        }
+
+        /* 双栏内容 */
+        .two-col {
+            display: grid;
+            grid-template-columns: 1.4fr 1fr;
+            gap: 40px;
+            margin: 40px 0;
+        }
+        .content-block {
+            background: #10152a;
+            border: 1px solid #1f2740;
+            border-radius: 18px;
+            padding: 30px;
+        }
+        .content-block h3 {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 18px;
+            color: #f8c26a;
+        }
+        .content-block p {
+            margin-bottom: 16px;
+            color: #b7bed9;
+        }
+        .content-block ul {
+            margin: 10px 0 20px 20px;
+            color: #a6aecb;
+        }
+        .content-block li {
+            margin-bottom: 8px;
+        }
+
+        /* 时间线 / 列表 */
+        .timeline-list {
+            list-style: none;
+            margin: 0;
+        }
+        .timeline-list li {
+            padding: 12px 0 12px 26px;
+            border-left: 2px solid #2a3150;
+            position: relative;
+            margin-left: 8px;
+        }
+        .timeline-list li::before {
+            content: '▹';
+            position: absolute;
+            left: -2px;
+            top: 12px;
+            color: #f8c26a;
+            background: #0b0e1a;
+            padding-left: 4px;
+        }
+        .timeline-list strong {
+            color: #e6e9ff;
+        }
+
+        /* 热点板块 */
+        .hot-section {
+            background: linear-gradient(180deg, #0d1120, #0b0e1a);
+            padding: 50px 0;
+        }
+        .hot-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+        .hot-item {
+            background: rgba(255,255,255,0.02);
+            border: 1px solid #1d2440;
+            border-radius: 14px;
+            padding: 20px;
+            text-align: center;
+            transition: background 0.2s;
+        }
+        .hot-item:hover {
+            background: rgba(248,194,106,0.04);
+        }
+        .hot-rank {
+            font-size: 2rem;
+            font-weight: 900;
+            color: #2a3150;
+            line-height: 1;
+        }
+        .hot-item:nth-child(1) .hot-rank,
+        .hot-item:nth-child(2) .hot-rank,
+        .hot-item:nth-child(3) .hot-rank {
+            color: #f8c26a;
+        }
+        .hot-item h4 {
+            margin: 10px 0 6px;
+            font-size: 1rem;
+            font-weight: 700;
+        }
+        .hot-item p {
+            font-size: 0.8rem;
+            color: #7c86a8;
+        }
+
+        /* FAQ */
+        .faq-wrap {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .faq-item {
+            background: #12172b;
+            border: 1px solid #232b47;
+            border-radius: 14px;
+            padding: 22px 28px;
+            margin-bottom: 16px;
+        }
+        .faq-item h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            color: #f0f2ff;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .faq-item h3::before {
+            content: 'Q';
+            background: #f8c26a;
+            color: #0b0e1a;
+            width: 26px;
+            height: 26px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 900;
+            flex-shrink: 0;
+        }
+        .faq-item p {
+            color: #a6aecb;
+            padding-left: 36px;
+            font-size: 0.9rem;
+        }
+
+        /* 页脚 */
+        .site-footer {
+            border-top: 1px solid #1f2740;
+            padding: 40px 0 30px;
+            margin-top: 40px;
+            background: #0a0d18;
+        }
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 30px;
+        }
+        .footer-about p {
+            color: #7c86a8;
+            font-size: 0.9rem;
+            max-width: 360px;
+        }
+        .footer-links h4,
+        .footer-contact h4 {
+            color: #c6cde5;
+            margin-bottom: 14px;
+            font-size: 1rem;
+        }
+        .footer-links ul {
+            list-style: none;
+        }
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+        .footer-links a {
+            color: #7c86a8;
+            font-size: 0.9rem;
+        }
+        .footer-links a:hover {
+            color: #f8c26a;
+        }
+        .copyright {
+            text-align: center;
+            color: #4a5578;
+            font-size: 0.85rem;
+            border-top: 1px solid #141b30;
+            padding-top: 24px;
+        }
+
+        /* 响应式 */
+        @media (max-width: 1024px) {
+            .hero-grid {
+                grid-template-columns: 1fr;
+            }
+            .card-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .hot-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .two-col {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+        @media (max-width: 700px) {
+            .wrapper {
+                padding: 0 16px;
+            }
+            .header-inner {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .main-nav ul {
+                gap: 16px;
+            }
+            .search-box {
+                width: 100%;
+            }
+            .search-box input {
+                width: 100%;
+            }
+            .hero h1 {
+                font-size: 2rem;
+            }
+            .card-grid,
+            .hot-grid {
+                grid-template-columns: 1fr;
+            }
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+            .section-title {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header class="site-header">
+    <div class="wrapper header-inner">
+        <div class="logo-area">
+            <div class="logo-icon">🔥</div>
+            <div class="logo-text">不知火舞<span>外星人</span></div>
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#origin">起源档案</a></li>
+                <li><a href="#theories">热门理论</a></li>
+                <li><a href="#creations">粉丝创作</a></li>
+                <li><a href="#topics">话题热度</a></li>
+                <li><a href="#faq">常见疑问</a></li>
+            </ul>
+        </nav>
+        <div class="search-box">
+            <input type="text" placeholder="搜索更多神秘设定...">
+            <button type="button">探索</button>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero 首屏 -->
+    <section class="hero">
+        <div class="wrapper hero-grid">
+            <div class="hero-content">
+                <span class="hero-badge">🛸 跨界神秘专题</span>
+                <h1>不知火舞外星人</h1>
+                <p>当格斗女王遇上星际来客，一个充满想象力与未知魅力的跨界话题在粉丝社群中迅速蔓延。这里汇集角色设定考据、同人脑洞、热门讨论与终极猜想，带你进入这个奇妙的平行宇宙。</p>
+                <div class="hero-actions">
+                    <a href="#origin" class="btn-primary">探索起源档案</a>
+                    <a href="#theories" class="btn-ghost">查看热门理论</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="visual-icon">👽🔥</div>
+                <div class="visual-title">不知火舞 · 星际形态</div>
+                <div class="visual-tags">
+                    <span class="tag">#格斗女王</span>
+                    <span class="tag">#外星设定</span>
+                    <span class="tag">#同人宇宙</span>
+                    <span class="tag">#跨界联动</span>
+                </div>
+                <p style="margin-top: 16px; font-size: 0.85rem; color: #7c86a8;">粉丝概念设计 · 非官方形象</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 四大栏目卡片 -->
+    <section style="padding: 60px 0 20px;">
+        <div class="wrapper">
+            <h2 class="section-title">专题核心版块</h2>
+            <p class="section-sub">从设定考据到创意脑洞，全方位探索「不知火舞外星人」这一独特主题</p>
+            <div class="card-grid">
+                <div class="card">
+                    <span class="card-icon">📜</span>
+                    <h3>起源档案</h3>
+                    <p>梳理不知火舞角色从诞生到如今的发展轨迹，探究“外星人”这一标签从何而来，是官方设定、翻译梗还是粉丝文化的延伸？</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🌀</span>
+                    <h3>平行宇宙猜想</h3>
+                    <p>如果不知火舞真的来自外星，她的忍术会如何解释？火焰能力与星际科技会碰撞出怎样的故事？多维度脑洞大开。</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🎨</span>
+                    <h3>同人创作集</h3>
+                    <p>汇集画师、写手与视频创作者的精彩作品，展现粉丝心中“星际不知火舞”的多样面貌，每一份创作都是独特的宇宙。</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">💬</span>
+                    <h3>社群热议</h3>
+                    <p>关于“不知火舞外星人”的讨论正在各大平台升温。从设定合理性到剧情走向，看看大家都在聊些什么。</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🎮</span>
+                    <h3>游戏联动可能</h3>
+                    <p>SNK 旗下角色常与各类作品联动。如果“外星人不知火舞”成为现实，你最希望在哪款游戏中看到她？</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🔍</span>
+                    <h3>考据与辟谣</h3>
+                    <p>哪些说法有据可依，哪些纯属网友杜撰？我们逐条梳理关于“不知火舞外星人”的各种传言与真相。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 双栏深度内容 -->
+    <section class="two-col wrapper">
+        <div class="content-block" id="origin">
+            <h3>🔭 不知火舞与外星人：这个说法从何而来？</h3>
+            <p>不知火舞是 SNK 旗下《饿狼传说》《拳皇》系列中的高人气角色，以华丽的扇子忍术和火焰能力闻名。而“外星人”这一联想，最初源自玩家社区中的趣味讨论——有人指出不知火舞的许多招式名称极具宇宙感，例如“超必杀忍蜂”的飞行轨迹，以及她登场时宛如流星般的火焰特效。</p>
+            <p>另一种说法是，在部分联动作品中，不知火舞曾与其他世界观的角色同台，其中不乏来自未来的机械生命或星际战士。这些看似突兀的碰撞，反而激发了粉丝的灵感，逐渐形成了“不知火舞可能是外星人后裔”的娱乐性假说。</p>
+            <p>但需要明确的是，截至目前，SNK 官方从未设定不知火舞为外星人。所有相关说法均为粉丝文化中的二次演绎，属于同人创造的范畴。这种“非官方但极具生命力”的梗文化，恰恰是游戏社区的魅力所在。</p>
+        </div>
+        <div class="content-block" id="theories">
+            <h3>🧠 热门理论：如果她是外星人，世界会怎样？</h3>
+            <ul class="timeline-list">
+                <li><strong>火焰忍术的真相：</strong>有粉丝推测，不知火舞的火焰并非查克拉或内力，而是某种外星能量在战斗中的可视化表现。她的扇子可能是一件外星科技武器。</li>
+                <li><strong>安迪的疑惑：</strong>如果不知火舞是外星人，她与安迪·博加德之间的感情故事将变得更为复杂——跨越星系的爱情，或许会成为新的剧情主线。</li>
+                <li><strong>拳皇大赛的阴谋：</strong>她参加拳皇大赛的目的可能不只是为了变强，而是为了寻找散落在地球上的飞船零件，每一场战斗都是一次收集任务。</li>
+                <li><strong>与库拉、K' 的联动：</strong>同样拥有冰与火能力的人物，如果意识到不知火舞的“外星血统”，NESTS 组织是否会将她视为新的研究对象？</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- 热点排名 -->
+    <section class="hot-section">
+        <div class="wrapper">
+            <h2 class="section-title">🔥 社区热议话题榜</h2>
+            <p class="section-sub">基于粉丝讨论热度整理，不代表官方立场</p>
+            <div class="hot-grid">
+                <div class="hot-item">
+                    <div class="hot-rank">01</div>
+                    <h4>外星人设定的合理脑洞</h4>
+                    <p>讨论数 2.3k</p>
+                </div>
+                <div class="hot-item">
+                    <div class="hot-rank">02</div>
+                    <h4>如果不知火舞是外星人，她的终极形态是什么？</h4>
+                    <p>讨论数 1.8k</p>
+                </div>
+                <div class="hot-item">
+                    <div class="hot-rank">03</div>
+                    <h4>盘点所有“外星人”线索</h4>
+                    <p>讨论数 1.5k</p>
+                </div>
+                <div class="hot-item">
+                    <div class="hot-rank">04</div>
+                    <h4>你希望官方出这样的剧情吗？</h4>
+                    <p>讨论数 1.1k</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 同人创作展示 -->
+    <section style="padding: 60px 0;">
+        <div class="wrapper">
+            <h2 class="section-title" id="creations">🎨 粉丝创作精选</h2>
+            <p class="section-sub">以下为社区创作者围绕“不知火舞外星人”主题的灵感呈现（文字描述，非实际图片）</p>
+            <div class="card-grid">
+                <div class="card">
+                    <span class="card-icon">🌌</span>
+                    <h3>「星焰舞姬」</h3>
+                    <p>画师 @Nebula_Art 创作了一系列概念图，将不知火舞的经典红白配色改为星云紫与荧光蓝，扇子边缘流动着银河般的星光。</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">✍️</span>
+                    <h3>短篇漫画《来自猎户座》</h3>
+                    <p>同人漫画家 @Kof_Fan 构思了一个短篇故事：不知火舞在深夜的森林中与一艘隐形飞船相遇，而她手中的扇子突然发出异样的光芒……</p>
+                </div>
+                <div class="card">
+                    <span class="card-icon">🎬</span>
+                    <h3>MAD 视频「星际忍蜂」</h3>
+                    <p>视频作者 @FlameCombo 将不知火舞的战斗动画与科幻电影片段混剪，并配上电子音乐，营造出她在外星球上战斗的既视感。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section style="padding: 20px 0 60px;" id="faq">
+        <div class="wrapper">
+            <h2 class="section-title">❓ 常见疑问与解答</h2>
+            <p class="section-sub">关于“不知火舞外星人”最常被问到的问题</p>
+            <div class="faq-wrap">
+                <div class="faq-item">
+                    <h3>不知火舞真的是外星人吗？</h3>
+                    <p>不是。这是粉丝圈内的趣味假说或同人设定，SNK 官方从未确认过这一设定。她的人类身份在官方剧情中非常明确。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>“外星人”的说法最早出自哪里？</h3>
+                    <p>很难追溯单一源头，通常认为起源于玩家对不知火舞夸张招式与神秘背景的调侃，后来在社交媒体和论坛中逐渐发酵。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>官方对这类粉丝创作是什么态度？</h3>
+                    <p>SNK 对非商业性质的同人创作通常持宽容态度，但官方设定并未改变。粉丝二创只要不涉及商业牟利或不当使用，一般被默许。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>有没有可能官方真的推出外星人版本的不知火舞？</h3>
+                    <p>游戏行业盛行跨界联动，未来在特定合作作品中出现平行世界版本的不知火舞并非不可能，但没有任何官方消息证实。</p>
+                </div>
+                <div class="faq-item">
+                    <h3>我想参与创作，需要注意什么？</h3>
+                    <p>建议在作品显著位置标明“同人创作”或“非官方”，避免与官方设定混淆。同时尊重角色本身的核心魅力——优雅、坚韧与强大。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="wrapper">
+        <div class="footer-grid">
+            <div class="footer-about">
+                <h3 style="color: #e6e9ff; margin-bottom: 12px;">不知火舞外星人 · 专题站</h3>
+                <p>这是一个由粉丝文化驱动的非官方信息聚合页面，旨在探索游戏角色与科幻想象的有趣结合。所有内容仅供参考与娱乐，不构成官方设定。</p>
+            </div>
+            <div class="footer-links">
+                <h4>快速导航</h4>
+                <ul>
+                    <li><a href="#origin">起源档案</a></li>
+                    <li><a href="#theories">热门理论</a></li>
+                    <li><a href="#creations">同人创作</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>相关内容</h4>
+                <ul>
+                    <li><a href="#">不知火舞全招式解析</a></li>
+                    <li><a href="#">拳皇系列世界观</a></li>
+                    <li><a href="#">SNK 联动历史</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2025 不知火舞外星人专题站 · 本网站为粉丝同人内容，与 SNK 或相关版权方无关 · 部分内容源自社区讨论</p>
+        </div>
+    </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</body>
+</html>
